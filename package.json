@@ -2,7 +2,13 @@
   "name": "anime-error-translator",
   "displayName": "Anime Error Translator",
   "description": "Traduce errores a un lenguaje más entendible.",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "Nao-Senpai",
+  "icon": "./media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nao-Senpaii/anime-error-translator.git"
+  },
   "engines": {
     "vscode": "^1.107.0"
   },
