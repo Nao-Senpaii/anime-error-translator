@@ -2,7 +2,7 @@
   "name": "anime-error-translator",
   "displayName": "Anime Error Translator",
   "description": "Traduce errores a un lenguaje más entendible.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "Nao-Senpai",
   "icon": "media/icon.png",
   "repository": {
