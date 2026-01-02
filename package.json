@@ -1,0 +1,65 @@
+{
+  "name": "anime-error-translator",
+  "displayName": "Anime Error Translator",
+  "description": "Traduce errores a un lenguaje más entendible.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": ["Other"],
+
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+
+  "main": "./out/extension.js",
+
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "animeErrorTranslator.view",
+          "name": "Anime Error Translator",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "anime-error-translator.openSettings",
+        "title": "Anime Error Translator: Abrir configuración"
+      },
+      {
+        "command": "anime-error-translator.showUnknowns",
+        "title": "Anime Error Translator: Mostrar errores desconocidos"
+      }
+    ],
+    "configuration": {
+      "title": "Anime Error Translator",
+      "properties": {
+        "anime-error-translator.images": {
+          "type": "object",
+          "description": "Map from error keys to image paths (absolute or workspace-relative).",
+          "default": {}
+        }
+      }
+    }
+  },
+
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "vscode-test"
+  },
+
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/node": "22.x",
+    "typescript": "^5.9.3",
+    "eslint": "^9.39.1",
+    "typescript-eslint": "^8.48.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

@@ -1,0 +1,8 @@
+pattern,key,message,image_key
+"cannot read (?:properties|property).* of (?:undefined|null)",cannot_read_property,"😳 Parece que estás intentando acceder o modificar algo que no existe (null/undefined).",cannot_read_property
+"is not a function",not_a_function,"😵 O-oye… estás intentando usar algo como función, pero no lo es.",not_a_function
+"TypeError: Cannot set properties of null (setting 'foo')",type_error,"⚠️ Hay un TypeError — revisa que estés usando valores del tipo correcto.",type_error,exact
+"is not defined|referenceerror",not_defined,"🤔 Estás usando una variable que no fue declarada o no está en el alcance.",not_defined
+"unexpected token|syntax error",syntax_error,"⚠️ Hay un error de sintaxis. Revisa la estructura de tu código — puede faltar un paréntesis, llave o haber un token inesperado.",syntax_error
+"cannot find module|module not found",module_not_found,"📦 No se encontró un módulo importado — verifica el nombre o instala la dependencia.",module_not_found
+"enoent: no such file or directory|no such file or directory",file_not_found,"No se encontró un archivo o recurso necesario. Verifica rutas y nombres.",file_not_found
