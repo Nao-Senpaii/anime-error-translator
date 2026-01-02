@@ -4,7 +4,7 @@
   "description": "Traduce errores a un lenguaje más entendible.",
   "version": "0.0.3",
   "publisher": "Nao-Senpai",
-  "icon": "./media/icon.png",
+  "icon": "media/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Nao-Senpaii/anime-error-translator.git"
