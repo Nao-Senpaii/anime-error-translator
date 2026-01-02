@@ -2,7 +2,7 @@
   "name": "anime-error-translator",
   "displayName": "Anime Error Translator",
   "description": "Traduce errores a un lenguaje más entendible.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Nao-Senpai",
   "icon": "./media/icon.png",
   "repository": {
@@ -12,14 +12,13 @@
   "engines": {
     "vscode": "^1.107.0"
   },
-  "categories": ["Other"],
-
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [
     "onStartupFinished"
   ],
-
   "main": "./out/extension.js",
-
   "contributes": {
     "views": {
       "explorer": [
@@ -51,14 +50,12 @@
       }
     }
   },
-
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "test": "vscode-test"
   },
-
   "devDependencies": {
     "@types/vscode": "^1.107.0",
     "@types/node": "22.x",
